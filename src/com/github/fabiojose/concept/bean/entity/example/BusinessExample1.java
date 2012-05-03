@@ -21,15 +21,18 @@ public class BusinessExample1 implements IExample<Business> {
 	final IExample<State>   state = new StateExample();
 	final IExample<City>    city = new CityExample();
  	
+	private Commons commons = Commons.getInstance();
+	
 	@Override
 	public Business getInstance() {
 
 		final Business _result = new Business();
-		Commons.getInstance().copy(address.getInstance(), _result);
+		commons.copy(address.getInstance(), _result);
 
 		_result.setBrand("BRAND NEW DAY");
 		_result.setDocument("DOC 5699565");
 		_result.setName("BLUE PLASTICS LTD.");
+		_result.setFoundation(commons.newDate(1926, 12, 31));
 		_result.setClassification(new BusinessClassification(1, "INDUSTRY"));
 		
 		

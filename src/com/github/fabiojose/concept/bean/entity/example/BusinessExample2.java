@@ -15,16 +15,18 @@ public final class BusinessExample2 implements IExample<Business> {
 	}
 
 	private IExample<Address> address = new AddressExample();
+	private Commons commons = Commons.getInstance();
 	
 	@Override
 	public Business getInstance() {
 		
 		final Business _result = new Business();
-		Commons.getInstance().copy(address.getInstance(), _result);
+		commons.copy(address.getInstance(), _result);
 		
 		_result.setBrand("MENTOL INDÚSTRIA E COMÉRCIO DE DOCES");
 		_result.setDocument("96966-888995/lll");
 		_result.setName("MENTOL METOS");
+		_result.setFoundation(commons.newDate(1960, 1, 1));
 		_result.setClassification(new BusinessClassification(1, "INDUSTRY"));
 		
 		return _result;
