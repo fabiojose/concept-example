@@ -8,7 +8,7 @@ import com.github.fabiojose.concept.bean.IPair;
 import com.github.fabiojose.concept.bean.Unit;
 import com.github.fabiojose.concept.bean.factory.UnitFactory;
 import com.github.fabiojose.concept.bean.good.ArtifactGood;
-import com.github.fabiojose.concept.bean.good.example.ArtifactGoodExample;
+import com.github.fabiojose.concept.bean.good.example.ArtifactGoodExample1;
 import com.github.fabiojose.concept.bean.register.IFiscalItem;
 import com.github.fabiojose.concept.bean.register.IItem;
 import com.github.fabiojose.concept.bean.register.ReceiptItem;
@@ -25,7 +25,7 @@ public final class ReceiptItemArtifactGoodExample implements IExample<ReceiptIte
 		_example.example();
 	}
 
-	private IExample<ArtifactGood> artifact = new ArtifactGoodExample();
+	private IExample<ArtifactGood> artifact = new ArtifactGoodExample1();
 	private UnitFactory unit = UnitFactory.getInstance();
 	
 	@Override

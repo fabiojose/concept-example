@@ -17,7 +17,7 @@ public final class IngoingOrderExample implements IExample<Order>{
 		
 	}
 
-	private IExample<OrderItem> artifact = new OrderItemArtifactGoodExample();
+	private IExample<OrderItem> artifact = new OrderItemArtifactGoodExample1();
 	private IExample<OrderItem> service = new OrderItemServiceGoodExample();
 	
 	@Override

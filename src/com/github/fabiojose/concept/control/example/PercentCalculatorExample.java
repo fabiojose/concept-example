@@ -21,8 +21,8 @@ public final class PercentCalculatorExample implements IExample<PercentCalculato
 	@Override
 	public void example() {
 		
-		System.out.println("10% of 100  = " + getInstance().calculate(10, 100));
-		System.out.println("1.6% of 100 = " + getInstance().calculate(1.6, 100));
+		System.out.println("10% of 100  = " + getInstance().calculate(10d, 100d));
+		System.out.println("1.6% of 100 = " + getInstance().calculate(1.6d, 100d));
 	}
 
 }
