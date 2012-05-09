@@ -45,7 +45,7 @@ public final class PhysicalExample1 implements IExample<Set<Physical>> {
 		final Physical _p2 = new Physical();
 		_p2.setDate(new Date());
 		_p2.setDiscriminators(new HashMap<String, IPair<String,String>>());
-		_p2.getDiscriminators().put("LOT_NUMBER", new Pair<String, String>("889/900"));
+		_p2.getDiscriminators().put("LOT_NUMBER", new Pair<String, String>("889/1000"));
 		_p2.setExpire(commons.newDate(2014, 10, 22));
 		_p2.setExtension(new HashMap<String, BeanExtension<? extends Object>>());
 		_p2.setName("IDENTIFIED NAME");
