@@ -18,7 +18,7 @@ public final class StockPhysicalExample1 implements IExample<Set<StockPhysical>>
 
 		final Set<StockPhysical> _result = new HashSet<StockPhysical>();
 		final PhysicalFragmentor _fragmentor = new PhysicalFragmentor();
-		_fragmentor.setFactor(19D);
+		_fragmentor.setFactor(95D);
 		
 		for(Physical _physical : physical.getInstance()){
 			
